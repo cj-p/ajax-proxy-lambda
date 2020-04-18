@@ -4,12 +4,34 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy:layer": "node  scripts/publishLayer",
+    "deploy:function": "node scripts/publishFunction",
+    "deploy:all": "node scripts/publishAllFunctionsWithLayer ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.656.0",
     "jwt-decode": "^2.2.0"
+  },
+  "devDependencies": {
+    "chalk": "^4.0.0",
+    "aws-sdk": "^2.656.0",
+    "dotenv": "^8.2.0",
+    "folder-hash": "^3.3.0",
+    "md5-file": "^5.0.0",
+    "ncp": "^2.0.0",
+    "pretty-bytes": "^5.3.0",
+    "read-pkg-up": "^7.0.1",
+    "zip-a-folder": "0.0.12"
+  },
+  "aws": {
+    "accessKeyId": {
+      "env": "ACCESS_KEY_ID"
+    },
+    "secretAccessKey": {
+      "env": "SECRET_ACCESS_KEY"
+    },
+    "region": "eu-west-2"
   }
 }

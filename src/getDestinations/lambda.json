@@ -1,0 +1,4 @@
+{
+  "Role": "arn:aws:iam::476388674417:role/DestinationLambda",
+  "Description" : "List all destinations of current user"
+}

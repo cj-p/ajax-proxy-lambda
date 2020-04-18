@@ -1,3 +1,6 @@
 /node_modules/
 /.idea/
 /ajax-proxy-lambda.iml
+/build/
+/dist/
+.env
